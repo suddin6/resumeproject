@@ -1,0 +1,297 @@
+@font-face{
+    font-family: "ZenTokyoZoo-Regular";
+    src: url("ZenTokyoZoo-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Barriecito-Regular";
+    src: url("Barriecito-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Comfortaa-Regular";
+    src: url("Comfortaa-Regular.ttf");
+}
+
+body{
+    background-color: #FCF3EE;
+    margin: 0;
+    border-left: 1vw solid #004D40;
+    border-right: 1vw solid #004D40;
+    min-height: 100vh;
+    padding-bottom: 80px;
+}
+
+#allAboutMe{
+    background-color: #004D40;
+    color: #FCF3EE;
+    padding: 10px 5px;
+    font-size: clamp(24px, 5vw, 45px);
+    font-weight: normal;
+    text-align: center;
+    align-content: center;
+    font-family: "ZenTokyoZoo-Regular";
+    border-color: black;
+}
+
+.buttonSetup{
+    background-color: #4ab2a5;
+    height: 47px;
+    align-content: center;
+    text-align: center;
+    font-family: "Barriecito-Regular", serif;
+    padding: 5px;
+}
+
+.buttons{
+    padding: 7px;
+    border: 2px outset buttonborder;
+    border-color: #004D40;
+    border-radius: 7px;
+    color: #004D40;
+    background-color: #FCF3EE;
+    text-decoration: none;
+    margin: clamp(6px, 2vw, 14px);
+    transition-duration: 0.4s;
+}
+
+.buttons:hover{
+    background-color: #004D40;
+    color: #FCF3EE;
+}
+
+#nameHeader{
+    font-family: "ZenTokyoZoo-Regular", "serif";
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    background-color: #FCF3EE;
+    color: #004D40;
+    margin: 0;
+    margin-top: 5px;
+}
+
+#nameHeader h2{
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    padding-left: 10px;
+    font-size: clamp(18px, 3vw, 33px);
+}
+
+#para1{
+    font-family: "Comfortaa-Regular", 'serif';
+    max-width: 350px;
+    margin: 0;
+    padding-left: 30px;
+    color: #184562;
+}
+
+#para1 p{
+    margin: 3px 0;
+    font-size: clamp(14px, 1.2vw, 20px);
+    line-height: 1.4;
+}
+
+#profileImage{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+#profileImage img{
+    width: clamp(150px, 18vw, 150px);
+    height: clamp(150px, 18vw, 150px);
+    border-radius: 40%;
+    border: 5px double #004D40;
+    object-fit: cover;
+    display: block;
+}
+
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #004D40;
+    color: #FCF3EE;
+    text-align: right;
+    padding: 5px 20px;
+    line-height: 0.5;
+    box-sizing: border-box;
+    font-family: "Comfortaa-Regular", 'serif';
+}
+
+#educationHeader{
+    font-family: "ZenTokyoZoo-Regular", "serif";
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    background-color: #FCF3EE;
+    color: #004D40;
+    margin: 0;
+    margin-top: 5px;
+}
+
+#educationHeader h2{
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    padding-left: 10px;
+    font-size: clamp(18px, 3vw, 33px);
+}
+
+#educationInfo{
+    font-family: "Comfortaa-Regular", 'serif';
+    margin-top: 10px;
+    margin: 0;
+    padding-left: 30px;
+    color: #184562;
+    padding-right: 5px;
+}
+
+#educationInfo p{
+    margin: 3px 0;
+    font-size: clamp(14px, 1.2vw, 20px);
+    line-height: 1.4;
+}
+
+.firstPage{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 150px;
+}
+
+#para1, #educationInfo{
+    flex: 1;
+    max-width: 550px;
+}
+
+#careerFocus{
+    font-family: "ZenTokyoZoo-Regular", "serif";
+    padding: 5px 15px;
+    letter-spacing: 2px;
+    background-color: #FCF3EE;
+    color: #004D40;
+    margin: 0;
+    margin-top: 5px;
+}
+
+#careerFocus h2{
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    padding-left: 5px;
+    font-size: clamp(18px, 3vw, 33px);
+    padding-top: 10px;
+}
+
+#career{
+    font-family: "Comfortaa-Regular", 'serif';
+    margin-top: 10px;
+    margin: 0;
+    padding-left: 30px;
+    color: #184562;
+    padding-right: 5px;
+}
+
+#career p{
+    margin: 3px 0;
+    font-size: clamp(14px, 1.2vw, 20px);
+    line-height: 1.8;
+}
+
+#bigHeader{
+    font-family: "ZenTokyoZoo-Regular", "serif";
+    padding: 5px 15px;
+    letter-spacing: 2px;
+    background-color: #FCF3EE;
+    color: #004D40;
+    margin: 0;
+    margin-top: 5px;
+}
+
+#bigHeader h2{
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    padding-left: 10px;
+    font-size: clamp(18px, 3vw, 33px);
+}
+
+.projectHeading{
+    font-family: "Barriecito-Regular", "serif";
+    padding: 5px 15px;
+    letter-spacing: 2px;
+    background-color: #FCF3EE;
+    color: #004D40;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.projectHeading h3{
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    padding-left: 25px;
+    font-size: clamp(15px, 3vw, 20px);
+}
+
+.projectInfo{
+    font-family: "Comfortaa-Regular", 'serif';
+    margin-top: 10px;
+    margin: 0;
+    padding-left: 30px;
+    color: #184562;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+
+.projectInfo ul{
+    margin: 3px 0;
+    font-size: clamp(14px, 1.2vw, 20px);
+    line-height: 1.8;
+}
+
+#experienceHeader{
+    font-family: "ZenTokyoZoo-Regular", "serif";
+    padding: 5px 15px;
+    letter-spacing: 2px;
+    background-color: #FCF3EE;
+    color: #004D40;
+    margin: 0;
+    margin-top: 5px;
+}
+
+#experienceHeader h2{
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    padding-left: 5px;
+    font-size: clamp(18px, 3vw, 35px);
+    padding-top: 10px;
+}
+
+#experienceInfo h3{
+    font-family: "Barriecito-Regular", "serif";
+    padding: 5px 15px;
+    letter-spacing: 2px;
+    background-color: #FCF3EE;
+    color: #004D40;
+    margin: 0;
+    margin-top: 5px;
+    padding-left: 30px;
+    font-size: clamp(15px, 3vw, 20px);
+}
+
+#experienceInfo ul{
+    font-family: "Comfortaa-Regular", 'serif';
+    padding-left: 55px;
+    color: #184562;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 3px 0;
+    font-size: clamp(14px, 1.2vw, 20px);
+    line-height: 1.8;
+}
