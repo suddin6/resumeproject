@@ -1,32 +1,32 @@
-@font-face{
+@font-face {
     font-family: "ZenTokyoZoo-Regular";
     src: url("ZenTokyoZoo-Regular.ttf");
 }
 
-@font-face{
+@font-face {
     font-family: "Barriecito-Regular";
     src: url("Barriecito-Regular.ttf");
 }
 
-@font-face{
+@font-face {
     font-family: "Comfortaa-Regular";
     src: url("Comfortaa-Regular.ttf");
 }
 
-body{
-    background-color: #FCF3EE;
+body {
+    background-color: #fcf3ee;
     margin: 0;
-    border-left: 1vw solid #004D40;
-    border-right: 1vw solid #004D40;
+    border-left: 1vw solid #004d40;
+    border-right: 1vw solid #004d40;
     min-height: 100vh;
-    
+
     display: flex;
     flex-direction: column;
 }
 
-#allAboutMe{
-    background-color: #004D40;
-    color: #FCF3EE;
+#allAboutMe {
+    background-color: #004d40;
+    color: #fcf3ee;
     padding: 10px 5px;
     font-size: clamp(24px, 5vw, 45px);
     font-weight: normal;
@@ -36,13 +36,12 @@ body{
     border-color: black;
 }
 
-.buttonSetup{
+.buttonSetup {
     background-color: #4ab2a5;
     height: 47px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /*text-align: center;*/
     font-family: "Barriecito-Regular", serif;
     padding: 5px;
     position: sticky;
@@ -50,34 +49,34 @@ body{
     z-index: 10;
 }
 
-.buttons{
+.buttons {
     padding: 7px;
     border: 2px outset buttonborder;
-    border-color: #004D40;
+    border-color: #004d40;
     border-radius: 7px;
-    color: #004D40;
-    background-color: #FCF3EE;
+    color: #004d40;
+    background-color: #fcf3ee;
     text-decoration: none;
     margin: clamp(6px, 2vw, 14px);
     transition-duration: 0.4s;
 }
 
-.buttons:hover{
-    background-color: #004D40;
-    color: #FCF3EE;
+.buttons:hover {
+    background-color: #004d40;
+    color: #fcf3ee;
 }
 
-#nameHeader{
+#nameHeader {
     font-family: "ZenTokyoZoo-Regular", "serif";
     padding: 5px 10px;
     letter-spacing: 2px;
-    background-color: #FCF3EE;
-    color: #004D40;
+    background-color: #fcf3ee;
+    color: #004d40;
     margin: 0;
     margin-top: 5px;
 }
 
-#nameHeader h2{
+#nameHeader h2 {
     margin: 0;
     margin-top: 10px;
     padding: 0;
@@ -85,62 +84,69 @@ body{
     font-size: clamp(18px, 3vw, 33px);
 }
 
-#para1{
-    font-family: "Comfortaa-Regular", 'serif';
+#para1 {
+    font-family: "Comfortaa-Regular", "serif";
     max-width: 350px;
     margin: 0;
     padding-left: 30px;
     color: #184562;
 }
 
-#para1 p{
+#para1 p {
     margin: 3px 0;
     font-size: clamp(14px, 1.2vw, 20px);
     line-height: 1.4;
 }
 
-#profileImage{
+#profileImage {
     position: absolute;
     top: 20px;
     right: 30px;
 }
 
-#profileImage img{
+#profileImage img {
     width: clamp(150px, 18vw, 150px);
     height: clamp(150px, 18vw, 150px);
     border-radius: 40%;
-    border: 5px double #004D40;
+    border: 5px double #004d40;
     object-fit: cover;
     display: block;
 }
 
-#footer{
+#footer {
     position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #004D40;
-    color: #FCF3EE;
+    background-color: #004d40;
+    color: #fcf3ee;
     text-align: right;
-    padding: 5px 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
     margin-top: auto;
     line-height: 0.5;
     box-sizing: border-box;
-    font-family: "Comfortaa-Regular", 'serif';
+    font-family: "Comfortaa-Regular", "serif";
     clear: both;
 }
 
-#educationHeader{
+#footer a {
+    color: #fcf3ee;
+    font-size: smaller;
+}
+
+#educationHeader {
     font-family: "ZenTokyoZoo-Regular", "serif";
     padding: 5px 10px;
     letter-spacing: 2px;
-    background-color: #FCF3EE;
-    color: #004D40;
+    background-color: #fcf3ee;
+    color: #004d40;
     margin: 0;
     margin-top: 5px;
 }
 
-#educationHeader h2{
+#educationHeader h2 {
     margin: 0;
     margin-top: 10px;
     padding: 0;
@@ -148,8 +154,8 @@ body{
     font-size: clamp(18px, 3vw, 33px);
 }
 
-#educationInfo{
-    font-family: "Comfortaa-Regular", 'serif';
+#educationInfo {
+    font-family: "Comfortaa-Regular", "serif";
     margin-top: 10px;
     margin: 0;
     padding-left: 30px;
@@ -157,13 +163,13 @@ body{
     padding-right: 5px;
 }
 
-#educationInfo p{
+#educationInfo p {
     margin: 3px 0;
     font-size: clamp(14px, 1.2vw, 20px);
     line-height: 1.4;
 }
 
-.firstPage{
+.firstPage {
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -171,22 +177,23 @@ body{
     gap: 150px;
 }
 
-#para1, #educationInfo{
+#para1,
+#educationInfo {
     flex: 1;
     max-width: 550px;
 }
 
-#careerFocus{
+#careerFocus {
     font-family: "ZenTokyoZoo-Regular", "serif";
     padding: 5px 15px;
     letter-spacing: 2px;
-    background-color: #FCF3EE;
-    color: #004D40;
+    background-color: #fcf3ee;
+    color: #004d40;
     margin: 0;
     margin-top: 5px;
 }
 
-#careerFocus h2{
+#careerFocus h2 {
     margin: 0;
     margin-top: 10px;
     padding: 0;
@@ -195,8 +202,8 @@ body{
     padding-top: 10px;
 }
 
-#career{
-    font-family: "Comfortaa-Regular", 'serif';
+#career {
+    font-family: "Comfortaa-Regular", "serif";
     margin-top: 10px;
     margin: 0;
     padding-left: 30px;
@@ -204,23 +211,23 @@ body{
     padding-right: 5px;
 }
 
-#career p{
+#career p {
     margin: 3px 0;
     font-size: clamp(14px, 1.2vw, 20px);
     line-height: 1.8;
 }
 
-#bigHeader{
+#bigHeader {
     font-family: "ZenTokyoZoo-Regular", "serif";
     padding: 5px 15px;
     letter-spacing: 2px;
-    background-color: #FCF3EE;
-    color: #004D40;
+    background-color: #fcf3ee;
+    color: #004d40;
     margin: 0;
     margin-top: 5px;
 }
 
-#bigHeader h2{
+#bigHeader h2 {
     margin: 0;
     margin-top: 10px;
     padding: 0;
@@ -228,17 +235,17 @@ body{
     font-size: clamp(18px, 3vw, 33px);
 }
 
-.projectHeading{
+.projectHeading {
     font-family: "Barriecito-Regular", "serif";
     padding: 5px 15px;
     letter-spacing: 2px;
-    background-color: #FCF3EE;
-    color: #004D40;
+    background-color: #fcf3ee;
+    color: #004d40;
     margin: 0;
     margin-top: 5px;
 }
 
-.projectHeading h3{
+.projectHeading h3 {
     margin: 0;
     margin-top: 5px;
     padding: 0;
@@ -246,8 +253,8 @@ body{
     font-size: clamp(15px, 3vw, 20px);
 }
 
-.projectInfo{
-    font-family: "Comfortaa-Regular", 'serif';
+.projectInfo {
+    font-family: "Comfortaa-Regular", "serif";
     margin-top: 10px;
     margin: 0;
     padding-left: 30px;
@@ -256,23 +263,23 @@ body{
     padding-bottom: 10px;
 }
 
-.projectInfo ul{
+.projectInfo ul {
     margin: 3px 0;
     font-size: clamp(14px, 1.2vw, 20px);
     line-height: 1.8;
 }
 
-#experienceHeader{
+#experienceHeader {
     font-family: "ZenTokyoZoo-Regular", "serif";
     padding: 5px 15px;
     letter-spacing: 2px;
-    background-color: #FCF3EE;
-    color: #004D40;
+    background-color: #fcf3ee;
+    color: #004d40;
     margin: 0;
     margin-top: 5px;
 }
 
-#experienceHeader h2{
+#experienceHeader h2 {
     margin: 0;
     margin-top: 10px;
     padding: 0;
@@ -281,20 +288,20 @@ body{
     padding-top: 5px;
 }
 
-#experienceInfo h3{
+#experienceInfo h3 {
     font-family: "Barriecito-Regular", "serif";
     padding: 5px 15px;
     letter-spacing: 2px;
-    background-color: #FCF3EE;
-    color: #004D40;
+    background-color: #fcf3ee;
+    color: #004d40;
     margin: 0;
     margin-top: 5px;
     padding-left: 30px;
     font-size: clamp(15px, 3vw, 20px);
 }
 
-#experienceInfo ul{
-    font-family: "Comfortaa-Regular", 'serif';
+#experienceInfo ul {
+    font-family: "Comfortaa-Regular", "serif";
     padding-left: 55px;
     color: #184562;
     padding-right: 5px;
@@ -305,17 +312,17 @@ body{
     line-height: 1.8;
 }
 
-.projectInfo img{
+.projectInfo img {
     width: 300px;
     height: 300px;
     border-radius: 15%;
-    border: 5px double #004D40;
+    border: 5px double #004d40;
     object-fit: cover;
     display: block;
     margin: 10px auto 5px;
 }
 
-.row{
+.row {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -323,15 +330,15 @@ body{
     margin: 0 auto;
 }
 
-.column{
+.column {
     flex: 0 0 auto;
 }
 
-#sectionImage img{
+#sectionImage img {
     width: 455px;
     height: 256px;
     border-radius: 15%;
-    border: 5px double #004D40;
+    border: 5px double #004d40;
     object-fit: cover;
     display: block;
     margin: 10px auto 5px;
